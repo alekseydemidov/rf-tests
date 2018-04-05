@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation   Testing Junos OS
-Library		/opt/data/libraries/pybot_base.py
+Library		../libraries/pybot_base.py
 
-Resource	/opt/data/resources/junos_kw.robot
-Resource        /opt/data/resources/local_kw.robot
-Variables       /opt/data/variables/all.yaml
+Resource	../resources/junos_kw.robot
+Resource        ../resources/local_kw.robot
+Variables       ../variables/all.yaml
 
 Suite Teardown	Close All Connections
 *** Variables ***
